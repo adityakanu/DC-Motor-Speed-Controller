@@ -27,7 +27,7 @@ The DC Motor Speed Control System enables dynamic and accurate manipulation of t
 
 ## Demo
 
-[Insert a brief description of the demo here. You can also include images or videos to showcase the project in action.]
+[Will upload the demo of the project on youtube soon]
 
 ## Circuit Diagram
 
@@ -107,7 +107,7 @@ Follow these steps to set up and run the DC Motor Speed Control System:
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+Contributions are welcome! If you'd like to contribute to the project via documentation or better circuit design and improvements, please follow these steps:
 
 1. Fork the repository.
 
