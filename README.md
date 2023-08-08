@@ -33,6 +33,8 @@ The DC Motor Speed Control System enables dynamic and accurate manipulation of t
 
 ![DC Motor Speed Control.png](https://github.com/adityakanu/DC-Motor-Speed-Controller/blob/1ac5bb0daf33675a4b12b25ef59dfe2687ae771b/DC%20Motor%20Speed%20Control.png)
 
+Also Look upon: [Schematic View](https://github.com/adityakanu/DC-Motor-Speed-Controller/blob/db0a11e33d6380ee50a626cfbe1fb06d776e3463/DC%20Motor%20Speed%20Control.pdf)
+
 In the circuit diagram, we have an intricate arrangement of components that collaborate to achieve precise control over the motor speed. The key components involved are the ESP8266 module, motor driver IC, and rotary potentiometer. Let's break down their roles and connections in detail:
 
   - ESP8266 Module (U1):
