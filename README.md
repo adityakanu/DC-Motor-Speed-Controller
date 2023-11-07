@@ -106,6 +106,29 @@ Follow these steps to set up and run the DC Motor Speed Control System:
     - Adjust the threshold value that determines the direction of motor rotation based on potentiometer readings.
     - Test the system by turning the potentiometer and observing the motor's speed changes. Make necessary adjustments to ensure smooth and accurate speed control.
     - Consider implementing safety measures, such as setting speed limits or incorporating emergency stop functionality.
+  
+4. Code:
+    - Include Libraries: The code includes a library called "Servo" that helps control a servo motor.
+    - Define Constants: It sets up some constants, such as pin numbers for the LDRs, a desired ratio ("setpoint") for sunlight, and some tuning parameters for a control algorithm (PID).
+    - Initialize Servo: It attaches a servo motor to pin 9 and reads the initial LDR values.
+    - Initial Servo Position: It checks if the LDR values are balanced (within a tolerance).It initializes the servo angle to 120 degrees. If not, it sets the servo angle based on which LDR has more light.
+    - Setup Serial Communication: It starts serial communication for debugging.
+    - Main Loop (loop()):
+        It continuously reads the LDR values.
+        Calculates the current ratio of LDR values.
+        Computes an "error" which is the difference between the desired ratio and the current ratio.
+        Initializes some variables for a control algorithm (PID).
+    - PID Control:
+        It adjusts the control parameters (Kp) based on the current position of the servo.
+        Calculates proportional, integral, and derivative terms for the control.
+        The integral term is constrained to prevent excessive accumulation.
+        The servo angle (Spoint) is calculated using these control terms and constraints.
+
+    - Update Servo: It sets the servo angle to Spoint based on the control calculations.
+    - Debugging: It prints out information like the current ratio, error, and servo angle for debugging.
+    - Delay: A small delay is added to stabilize the system.
+
+In summary, this code uses LDR sensors and a servo motor to adjust the solar panel's angle, keeping it aligned with the sun for optimal energy capture. It employs a control algorithm (PID) to calculate the right angle based on the ratio of light detected by the LDRs and adjusts the solar panel accordingly. This ensures that the solar panel generates more energy by continuously facing the sun.
 
 ## Contributing
 
